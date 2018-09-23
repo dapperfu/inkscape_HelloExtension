@@ -1,33 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
-    <_name>J Tech Photonics Laser Tool</_name>
-    <id>jtechphotonics.com</id>
-	<dependency type="executable" location="extensions">laser.py</dependency>
+	<_name>Hello World</_name>
+	<id>world.hello.example.com</id>
+
+    <!-- Dependencies -->
+	<dependency type="executable" location="extensions">hello.py</dependency>
 	<dependency type="executable" location="extensions">inkex.py</dependency>
+    <!-- End Dependencies -->
 
-	<param name="laser-command" type="string" _gui-text="Laser ON Command:">M03</param>
-	<param name="laser-off-command" type="string" _gui-text="Laser OFF Command:">M05</param>
-	<param name="travel-speed" type="int" min="0" max="10000" _gui-text="Travel Speed (mm/min or in/min):">3000</param>
-	<param name="laser-speed" type="int" min="0" max="4000" _gui-text="Laser Speed (mm/min or in/min):">100</param>
-	<param name="laser-power" type="int" min="0" max="20000" _gui-text="Laser Power S# (0-255 or 0-12000):">255</param>
-	<param name="power-delay" type="float" min="0" max="1000" _gui-text="Power-On Delay (ms or s):">0</param>	
-	<param name="passes" type="int" min="1" max="100" _gui-text="Passes:">1</param>
-	<param name="pass-depth" type="float" min="0" max="10" _gui-text="Pass Depth (mm or in):">1</param>
-	<param name="directory" type="string" _gui-text="Directory:"></param>
-	<param name="filename" type="string" _gui-text="Filename:">output.gcode</param>
-	<param name="add-numeric-suffix-to-filename" type="boolean" _gui-text="Add numeric suffix to filename">true</param>
+    <!-- Parameters -->
+    <!-- End Parameters -->
 
-  <param name="unit" type="enum" _gui-text="All Units (mm or in):">
-    <item value="G21 (All units in mm)">mm</item>
-    <item value="G20 (All units in inches)">in</item>
-  </param>
+    <!-- http://wiki.inkscape.org/wiki/index.php/INX_Parameters#Available_types -->
+    <param name="name_boolean" type="boolean" gui-text="Some label text">false</param>
+    <param name="name_color" type="color"></param>
 
-	<effect>
+
+    <param name="name_description" type="description">Some text here.</param>
+    <param name="name_header" type="description" appearance="header">Header</param>
+
+    <param name="name_name" type="enum" gui-text="Some label text">
+       <item value="1">First option</item>
+       <item value="2">Second option</item>
+    </param>
+
+    <param name="name_float" type="float" precision="3" min="0" max="9999" gui-text="Some label text">1.234</param>
+
+    <param name="name_float2" type="float" appearance="full" precision="3" min="0" max="9999"  gui-text="Some label text">1.234</param>
+    <effect>
 		<effects-menu>
-			<submenu _name="Generate Laser Gcode"/>
+			<submenu _name="Hello World!"/>
 		</effects-menu>
 		<object-type>path</object-type>
   	</effect>
+
+    <param name="name_optiongroup" type="optiongroup" gui-text="Some label text">
+        <option value="1">First option</option>
+        <option value="2">Second option</option>
+    </param>
+    <param name="name_optiongroup2" type="optiongroup" appearance="minimal" gui-text="Some label text">
+        <option value="1">First option</option>
+        <option value="2">Second option</option>
+    </param>
+    <param name="name_string" type="string" gui-text="Some text label">Some default text</param>
+
 
 	<script>
 		<command reldir="extensions" interpreter="python">laser.py</command>
