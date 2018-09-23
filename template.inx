@@ -2,6 +2,9 @@
 <inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
 	<_name>{{extension.name}}</_name>
 	<id>{{extension.id}}</id>
+	<script>
+		<command reldir="extensions" interpreter="python">{{ script }}</command>
+	</script>
 
     <!-- Dependencies -->
 {%- for dependency in dependencies %}
@@ -9,6 +12,12 @@
 {%- endfor %}
     <!-- End Dependencies -->
 
+    <effect>
+		<effects-menu>
+			<submenu _name="Hello World!"/>
+		</effects-menu>
+		<object-type>path</object-type>
+  	</effect>
     <!-- Parameters -->
 {%- for parameter in parameters %}
 	{%- endfor %}
@@ -27,15 +36,8 @@
        <item value="2">Second option</item>
     </param>
 
-    <param name="name_float" type="float" precision="3" min="0" max="9999" gui-text="Some label text">1.234</param>
-
+    <param name="name_float" type="float" precision="2" min="0" max="1" gui-text="Some label text">1.234</param>
     <param name="name_float2" type="float" appearance="full" precision="3" min="0" max="9999"  gui-text="Some label text">1.234</param>
-    <effect>
-		<effects-menu>
-			<submenu _name="Hello World!"/>
-		</effects-menu>
-		<object-type>path</object-type>
-  	</effect>
 
     <param name="name_optiongroup" type="optiongroup" gui-text="Some label text">
         <option value="1">First option</option>
@@ -46,10 +48,5 @@
         <option value="2">Second option</option>
     </param>
     <param name="name_string" type="string" gui-text="Some text label">Some default text</param>
-
-
-	<script>
-		<command reldir="extensions" interpreter="python">{{ script }}</command>
-	</script>
 
 </inkscape-extension>
