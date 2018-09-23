@@ -26,3 +26,18 @@ SOFTWARE.
 """
 import inkex
 import sys
+import datetime
+
+fid = open("/tmp/hello.txt", "w")
+fid.write("#"*20)
+fid.write("\n# ")
+fid.write(str(datetime.datetime.now()))
+fid.write("\n")
+fid.write("#"*20)
+fid.write("\nExecutable: \n\t")
+fid.write(sys.executable)
+fid.write("\nPaths:")
+for path in sys.path:
+    fid.write(path)
+    fid.write("\n")
+fid.close()
