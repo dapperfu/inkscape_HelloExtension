@@ -2,11 +2,13 @@
 <inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
 	<_name>{{extension.name}}</_name>
 	<id>{{extension.id}}</id>
-{% for item in navigation %}
-    <dependency type="{{ dependency.type }}" location="extensions">{{ dependency.path }}</dependency>
-    <li><a href="{{ item.href }}">{{ item.caption }}</a></li>
+{% for dependency in dependencies %}
+	<dependency type="{{ dependency.type }}" location="extensions">{{ dependency.path }}</dependency>
 {% endfor %}
-	<dependency type="executable" location="extensions"></dependency>
+
+{% for parameter in parameters %}
+	<dependency type="{{ dependency.type }}" location="extensions">{{ dependency.path }}</dependency>
+{% endfor %}
 
 	<param name="" type="int" _gui-text="Laser ON Command:">M03</param>
 	<param name="laser-off-command" type="string" _gui-text="Laser OFF Command:">M05</param>
