@@ -46,7 +46,7 @@
 
 
 	<script>
-		<command reldir="extensions" interpreter="python">laser.py</command>
+		<command reldir="extensions" interpreter="python">hello.py</command>
 	</script>
 
 </inkscape-extension>
