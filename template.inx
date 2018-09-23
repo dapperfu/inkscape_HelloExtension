@@ -2,14 +2,18 @@
 <inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
 	<_name>{{extension.name}}</_name>
 	<id>{{extension.id}}</id>
-{% for dependency in dependencies %}
-	<dependency type="{{ dependency.type }}" location="extensions">{{ dependency.path }}</dependency>
-{% endfor %}
 
-{% for parameter in parameters %}
+    <!-- Dependencies -->
+{%- for dependency in dependencies %}
 	<dependency type="{{ dependency.type }}" location="extensions">{{ dependency.path }}</dependency>
 {%- endfor %}
+    <!-- End Dependencies -->
 
+    <!-- Parameters -->
+{%- for parameter in parameters %}
+	<dependency type="{{ dependency.type }}" location="extensions">{{ dependency.path }}</dependency>
+{%- endfor %}
+    <!-- End Parameters -->
 
 	<param name="laser-off-command" type="string" _gui-text="Laser OFF Command:">M05</param>
 	<param name="travel-speed" type="int" min="0" max="10000" _gui-text="Travel Speed (mm/min or in/min):">3000</param>
