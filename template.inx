@@ -17,13 +17,10 @@
     <!-- http://wiki.inkscape.org/wiki/index.php/INX_Parameters#Available_types -->
 
     <param name="name_header" type="description" appearance="header">Hello World!</param>
-
     <param name="name_description" type="description">tail -F /tmp/hello.txt to see what Inkscape is doing behind the scenes.</param>
-
 
     <param name="name_boolean" type="boolean" gui-text="Boolean Checkbox">false</param>
     <param name="name_color" type="color"></param>
-
 
     <param name="name_enum" type="enum" gui-text="Enum L">
        <item value="1">First option</item>
