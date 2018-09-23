@@ -13,8 +13,12 @@
 {%- for parameter in parameters %}
 	{%- endfor %}
     <!-- End Parameters -->
+    <param name="name" type="boolean" gui-text="Some label text">false</param>
+    <param name="name" type="color"></param>
 
 
+    <param name="name" type="description">Some text here.</param>
+    <param name="name" type="description" appearance="header">Header</param>
 
 	<effect>
 		<effects-menu>
