@@ -8,7 +8,9 @@
 
 {% for parameter in parameters %}
 	<dependency type="{{ dependency.type }}" location="extensions">{{ dependency.path }}</dependency>
-{% endfor %}
+{%- endfor %}
+
+
 	<param name="laser-off-command" type="string" _gui-text="Laser OFF Command:">M05</param>
 	<param name="travel-speed" type="int" min="0" max="10000" _gui-text="Travel Speed (mm/min or in/min):">3000</param>
 	<param name="laser-speed" type="int" min="0" max="4000" _gui-text="Laser Speed (mm/min or in/min):">100</param>
