@@ -1,3 +1,12 @@
+## inkscape_HelloExtension
+# venv
+bin/
+etc/
+lib64
+pyvenv.cfg
+share/
+
+## Github
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
