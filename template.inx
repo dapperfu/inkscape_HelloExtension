@@ -22,7 +22,7 @@
     <param name="name_boolean" type="boolean" gui-text="Boolean Checkbox">false</param>
     <param name="name_color" type="color"></param>
 
-    <param name="name_enum" type="enum" gui-text="Enum L">
+    <param name="name_enum" type="enum" gui-text="Enum:">
        <item value="1">First option</item>
        <item value="2">Second option</item>
     </param>
