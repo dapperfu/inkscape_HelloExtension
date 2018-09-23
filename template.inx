@@ -26,27 +26,34 @@
     <!-- http://wiki.inkscape.org/wiki/index.php/INX_Parameters#Available_types -->
 
     <param name="name_header" type="description" appearance="header">Hello World!</param>
+
     <param name="name_description" type="description">tail -F /tmp/hello.txt to see what Inkscape is doing behind the scenes.</param>
+
 
     <param name="name_boolean" type="boolean" gui-text="Boolean Checkbox">false</param>
     <param name="name_color" type="color"></param>
+
 
     <param name="name_enum" type="enum" gui-text="Enum:">
        <item value="1">First option</item>
        <item value="2">Second option</item>
     </param>
 
-    <param name="name_float" type="float" precision="2" min="0" max="1" gui-text="Some label text">1.234</param>
-    <param name="name_float2" type="float" appearance="full" precision="3" min="0" max="9999"  gui-text="Some label text">1.234</param>
+    <param name="name_float" type="float" precision="1" min="0" max="1" gui-text="Float:">1.234</param>
 
-    <param name="name_optiongroup" type="optiongroup" gui-text="Some label text">
+    <param name="name_float2" type="float" appearance="full" precision="2" min="0" max="1"  gui-text="Float [full]">0.5</param>
+
+    <param name="name_optiongroup" type="optiongroup" gui-text="Option Group:">
         <option value="1">First option</option>
         <option value="2">Second option</option>
     </param>
-    <param name="name_optiongroup2" type="optiongroup" appearance="minimal" gui-text="Some label text">
+    <param name="name_optiongroup2" type="optiongroup" appearance="minimal" gui-text="Option Group [minimal]">
         <option value="1">First option</option>
         <option value="2">Second option</option>
     </param>
+
+
+
     <param name="name_string" type="string" gui-text="Some text label">Some default text</param>
 
 </inkscape-extension>
