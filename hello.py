@@ -34,13 +34,16 @@ fid.write("\n# ")
 fid.write(str(datetime.datetime.now()))
 fid.write("\n")
 fid.write("#"*20)
+
 fid.write("\nExecutable: \n\t")
 fid.write(sys.executable)
+
 fid.write("\nPaths:\n")
 for path in sys.path:
     fid.write("\t")
     fid.write(path)
     fid.write("\n")
+    
 fid.write("\nArgs:\n")
 for arg in sys.argv:
     fid.write("\t")
