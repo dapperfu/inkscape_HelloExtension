@@ -3,10 +3,10 @@
 	<_name>{{extension.name}}</_name>
 	<id>{{extension.id}}</id>
 {% for item in navigation %}
-	<dependency type="executable" location="extensions">hello.py</dependency>
+    <dependency type="{{ dependency.type }}" location="extensions">{{ dependency.path }}</dependency>
     <li><a href="{{ item.href }}">{{ item.caption }}</a></li>
 {% endfor %}
-	<dependency type="executable" location="extensions">inkex.py</dependency>
+	<dependency type="executable" location="extensions"></dependency>
 
 	<param name="" type="int" _gui-text="Laser ON Command:">M03</param>
 	<param name="laser-off-command" type="string" _gui-text="Laser OFF Command:">M05</param>
