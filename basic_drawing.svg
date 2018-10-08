@@ -23,17 +23,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4895833"
-     inkscape:cx="278"
-     inkscape:cy="114"
+     inkscape:zoom="1.1098856"
+     inkscape:cx="217.06699"
+     inkscape:cy="166.78553"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1918"
+     inkscape:window-width="958"
      inkscape:window-height="1038"
      inkscape:window-x="0"
      inkscape:window-y="20"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="0" />
   <defs
      id="defs2">
     <inkscape:perspective
@@ -52,7 +52,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -68,27 +68,47 @@
        height="9.8999996"
        x="0.050000004"
        y="287.04999"
-       inkscape:label="#rect815" />
+       inkscape:label="#_square10">
+      <desc
+         id="desc1012">A square with 10 mm sides.</desc>
+      <title
+         id="title1010">Square 10</title>
+    </rect>
     <rect
        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.10000002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="square15"
+       id="square20"
        width="19.9"
        height="19.9"
        x="40.049999"
        y="237.05"
-       inkscape:label="#rect815-3" />
+       inkscape:label="#sq20">
+      <desc
+         id="desc1016">Square with 20 mm sizes.</desc>
+      <title
+         id="title1014">Square 20</title>
+    </rect>
     <path
        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="M 9.9500001,202 A 4.9499999,4.9499999 0 0 1 4.9999999,206.95 4.9499999,4.9499999 0 0 1 0.05,202 4.9499999,4.9499999 0 0 1 4.9999999,197.05 4.9499999,4.9499999 0 0 1 9.9500001,202 Z"
-       id="circle20"
+       id="circle10"
        inkscape:connector-curvature="0"
-       inkscape:label="#path832" />
+       inkscape:label="#circle10_label">
+      <desc
+         id="desc1004">A circle with diameter of 10.</desc>
+      <title
+         id="title1002">Circle10 Title</title>
+    </path>
     <path
        inkscape:connector-curvature="0"
        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 99.95,209.5 a 12.45,12.45 0 0 1 -12.449998,12.45 12.45,12.45 0 0 1 -12.45,-12.45 12.45,12.45 0 0 1 12.45,-12.45 A 12.45,12.45 0 0 1 99.95,209.5 Z"
        id="circle25"
-       inkscape:label="#path832-6" />
+       inkscape:label="#c25">
+      <desc
+         id="desc1020">Circle with height and width of 25 mm.</desc>
+      <title
+         id="title1018">Circle 25</title>
+    </path>
     <rect
        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.10000001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="square25"
@@ -96,11 +116,16 @@
        height="24.9"
        x="75.050003"
        y="272.04999"
-       inkscape:label="#rect815-7" />
+       inkscape:label="#sq25">
+      <desc
+         id="desc1024">Square with 25 mm sides. (1 inch with ~1.6% error)</desc>
+      <title
+         id="title1022">Square 25</title>
+    </rect>
     <path
        sodipodi:type="star"
        style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.18089128;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="path912"
+       id="triangle20"
        sodipodi:sides="3"
        sodipodi:cx="-120.73526"
        sodipodi:cy="207.2896"
@@ -113,7 +138,13 @@
        inkscape:randomized="0"
        d="m -109.06693,214.02631 -23.33666,0 11.66833,-20.21014 z"
        inkscape:transform-center-y="-3.0523023"
-       transform="matrix(0.79135379,0,0,0.90616967,105.58738,62.480279)" />
+       transform="matrix(0.79135379,0,0,0.90616967,105.58738,62.480279)"
+       inkscape:label="#triangle20_">
+      <desc
+         id="desc1008">Equilateral triangle with height and width of 20 mm.</desc>
+      <title
+         id="title1006">Triangle 20</title>
+    </path>
   </g>
   <defs
      id="defs991">

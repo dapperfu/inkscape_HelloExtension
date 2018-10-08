@@ -43,11 +43,14 @@ for path in sys.path:
     fid.write("\t")
     fid.write(path)
     fid.write("\n")
-    
+
 fid.write("\nArgs:\n")
 for arg in sys.argv:
     fid.write("\t")
     fid.write(arg)
     fid.write("\n")
-    
+
 fid.close()
+
+import shutil
+shutil.copy2(sys.argv[-1], "/tmp/inkscape.svg")
